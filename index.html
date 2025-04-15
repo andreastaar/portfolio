@@ -1,58 +1,246 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Estrella</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Andrea Estrella - Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-
-<header>
-    <h1>Tu Nombre</h1>
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Breve descripción sobre ti, tu experiencia y tus intereses profesionales.</p>
-</section>
-
-<section id="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Diseño Gráfico</li>
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#all-projects">Projects</a></li>
+      <li><a href="#contact-me">Contact</a></li>
     </ul>
-</section>
+  </nav>
 
-<section id="proyectos">
-    <h2>Mis Proyectos</h2>
-    <div class="proyectos">
-        <div class="proyecto">
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto 1. <a href="#">Ver más</a></p>
+  <section id="hero" class="jumbotron">
+    <div class="container-hero">
+      <div class="hero-content">
+        <div class="margin-hero">
+          <h1 class="hero-title load-hidden">
+            Hi, I'm <span class="text-color-main">Andrea Estrella</span>
+          </h1>
+          <h1 class="role hero-title">
+            <span id="dynamic-role">Full-Stack Developer</span>
+          </h1>
+          <h2 class="hero-description">Welcome to my personal website.</h2>
         </div>
-        <div class="proyecto">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto 2. <a href="#">Ver más</a></p>
-        </div>
-        <div class="proyecto">
-            <h3>Proyecto 3</h3>
-            <p>Descripción del proyecto 3. <a href="#">Ver más</a></p>
-        </div>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="project-link" href="#about">Know more</a>
+        </p>
+      </div>
+      <!-- Contenedor de imagen -->
+      <div class="hero-image">
+        <!-- Animacion de chica con laptop -->
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player src="https://lottie.host/1a1e055b-9d01-43f6-b3f7-4e3ba386605d/bz7pWGs2SL.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></dotlottie-player>
+      </div>
     </div>
+  </section>
+
+
+
+  <!-- about me -->
+
+  <section id="about">
+    <div class="about-me">
+      <h2 class="section-title">ABOUT ME</h2>
+      <div class="about-me-container">
+        <div class="about-me-script">
+          <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+          <dotlottie-player src="https://lottie.host/35068a6a-44d8-46f7-8e52-e9714d3fa75a/mrJfIb1a3b.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></dotlottie-player>
+
+        </div>
+        <div class="about-me-image">
+          <img src="assets/img/FOTO.jpeg" alt="Profile Image">
+        </div>
+        <div class="about-me-content">
+          <p>Soy desarrolladora Web Full-Stack con una sólida base en front-end y back-end, orientada a crear soluciones innovadoras y escalables. Mi formación en Le Wagon y Oracle Next Education me ha permitido dominar tecnologías clave como Ruby on Rails, JavaScript, HTML5, CSS3, Flexbox, Git y React, junto con un enfoque en diseño atractivo y funcional. Además, tengo experiencia en diseño UX/UI, lo que me permite ofrecer productos digitales que no solo funcionan bien, sino que también brindan una experiencia intuitiva al usuario. Manejo herramientas como Figma, Whimsical, GitHub, Heroku y Cloudinary, ideales para el desarrollo y despliegue de aplicaciones de alto impacto.</p>
+          <button class="resume-button" onclick="viewResume()"><span>View Resume</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="arrow">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <dotlottie-player src="https://lottie.host/6c4df537-6808-416e-a24f-bfafe92dc798/XALl2ht0pi.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+  </div>
+
+
+    <!-- SKILLS -->
+
+   <section id="center-wrapper">
+    <div class="skills-container">
+        <div class="skills-title"></div>
+          <div class ="content-wrapper">
+            <ul class="team" style="--member-count: 10">
+              <li style="--member-idx:0"><img src="assets/img/js.png" alt=""></li>
+              <li style="--member-idx:1"><img src="assets/img/html.png" alt=""></li>
+              <li style="--member-idx:2"><img src="assets/img/css.png" alt=""></li>
+              <li style="--member-idx:3"><img src="assets/img/ruby.png" alt=""></li>
+              <li style="--member-idx:4"><img src="assets/img/rails.png" alt=""></li>
+              <li style="--member-idx:5"><img src="assets/img/bootstrap.png" alt=""></li>
+              <li style="--member-idx:6"><img src="assets/img/figma.png" alt=""></li>
+              <li style="--member-idx:7"><img src="assets/img/react.png" alt=""></li>
+              <li style="--member-idx:8"><img src="assets/img/github.png" alt=""></li>
+              <li style="--member-idx:9"><img src="assets/img/heroku.png" alt=""></li>
+            </ul>
+            <div class="skills-grid">
+              <div class="skill-box">
+                  <h3>Languages</h3>
+                  <p>Ruby, JavaScript</p>
+              </div>
+              <div class="skill-box">
+                  <h3>Databases</h3>
+                  <p>SQLite</p>
+              </div>
+              <div class="skill-box">
+                  <h3>Tools</h3>
+                  <p>VSCode, Figma, Git, GitHub,Font Awesome, Heroku, Cloudinary</p>
+              </div>
+              <div class="skill-box">
+                  <h3>Other</h3>
+                  <p>HTML, CSS, SCSS, Bootstrap</p>
+              </div>
+              <div class="skill-box">
+                  <h3>Frameworks</h3>
+                  <p>React, Ruby on Rails</p>
+              </div>
+            </div>
+          </div>
+      </div>
+   </section>
+
+
+
+  <!-- **** Projects Section **** -->
+
+  <section id="all-projects">
+    <div class="projects container">
+      <h2 class="projects-title text-center">PROJECTS</h2>
+      <div class="each-project row project align-items-start">
+        <div class="col-lg-4 col-sm-12 project-info">
+          <h3 class="project-title">Neumashop</h3>
+          <p class="project-description">
+            Mi primer trabajo freelo fue desarrollar esta landing page para Neumashop, empresa que comercializa llantas para todo tipo de auto. Desarrolle desde la experiencia de usuario en Mockups a desarrollar el codigo como tal. Para las interacciones utilice Javascript y consumi API de Whatssap.
+          </p>
+          <div class="project-links">
+            <a href="https://neumashoperu.com/" class="project-link project-live"  target="_blank"><span>See Live</span></a>
+            <a href="#" class="link-code project-code"><span>Source Code</span></a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 project-image load-hidden project-wrapper__image" style="visibility: visible;">
+          <div class="js-tilt rounded thumbnail" style="will-change: transform;">
+            <img alt="Project Image" class=" id" src="assets/img/Neumashop.png">
+                <div class="js-tilt-glare" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; pointer-events: none; border-radius: inherit;">
+                  <div class="js-tilt-glare-inner" style="position: absolute; top: 50%; left: 50%; pointer-events: none; background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%); transform: rotate(180deg) translate(-50%, -50%); opacity: 0; width: 1558px; height: 1558px;"></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+          <!-- Project 2 -->
+      <div class="each-project row project align-items-start">
+        <div class="col-lg-4 col-sm-12 project-info">
+          <h3 class="project-title">Impactrail</h3>
+          <p class="project-description">
+            Este proyecto lo desarrolle dentro del Bootcamp de Le Wagon. Desarrolle tanto el backend como fronted con Ruby on Rails.
+          </p>
+          <div class="project-links">
+            <a href="https://www.impact-trail.com/" class="project-link project-live"  target="_blank"><span>See Live</span></a>
+            <a href="#" class="link-code project-code"><span>Source Code</span></a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 project-image load-hidden project-wrapper__image" style="visibility: visible;">
+          <div class="js-tilt rounded thumbnail">
+            <img alt="Project Image 1" src="assets/img/Impactrail.png">
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="each-project row project align-items-start">
+        <div class="col-lg-4 col-sm-12 project-info">
+          <h3 class="project-title">Mi Joyita</h3>
+          <p class="project-description">
+            A brief description of Project 2 focusing on the skills applied and proactive problem-solving approach used.
+          </p>
+          <div class="project-links">
+            <a href="#" class="project-link project-live"><span>See Live</span></a>
+            <a href="#" class="link-code project-code"><span>Source Code</span></a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 project-image load-hidden project-wrapper__image" style="visibility: visible;">
+          <div class="js-tilt rounded thumbnail">
+            <img alt="Project Image 2" src="assets/img/ejemplo.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- **** Contact Section **** -->
+<section id="contact-me">
+  <div class="contact-section">
+    <div class="contact-info">
+      <h2>Let's talk</h2>
+      <div class="contact-details">
+        <p><i class="fas fa-phone"></i> +51 992064112</p>
+        <p><i class="fas fa-globe"></i> /pame23-a</p>
+        <p><i class="fas fa-envelope"></i> pamelalcantara23@gmail.com</p>
+        <p><i class="fas fa-instagram"></i> /pamelalcantara</p>
+      </div>
+      <div class="buttons">
+        <button class="btn resume-btn">Download my resume</button>
+        <button class="btn portfolio-btn">Download this portfolio in PDF</button>
+      </div>
+      <div class="qr-linkedin">
+        <img src="qr-code.png" alt="QR Code to LinkedIn">
+        <p>Connect on LinkedIn</p>
+      </div>
+    </div>
+    <div class="profile-pic">
+      <img src="assets/img/FOTO.jpeg" alt="Profile Picture">
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+    <dotlottie-player src="https://lottie.host/ff1ff86a-32ca-4840-bba4-67cf0012a608/Hhmyzx9rnf.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
+  </div>
 </section>
 
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>Email:
+
+
+    <footer class="py-4 text-center footer-container">
+      <!-- Centra el icono y el texto "Back to Top" -->
+      <div class="back-to-top-wrapper">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-2x fa-angle-up" aria-hidden="true"></i>
+        </a>
+        <p>BACK TO TOP</p>
+      </div>
+
+      <!-- Añade más espacio entre los iconos de la lista -->
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3 icon-list">
+        <li><a href="https://www.impact-trail.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/pamela-alcantara/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCGlsmVbVnJCkmNCLzTgMHScdDMVlSgflLkSQBfHqHJLgblSDHzsvHZwLFLpdGVNhfXnhL" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+
+
+      </ul>
+
+      <p class="text-center ">© 2024 Pamela Alcantara | Derechos reservados.</p>
+
+    </footer>
+
+
+
+  <script src="scripts.js"></script>
+</body>

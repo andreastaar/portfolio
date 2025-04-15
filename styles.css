@@ -3,10 +3,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-  background: #333;
+  background: #5b3cc4;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -25,19 +26,20 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-section {
-  padding: 20px;
+nav ul li a:hover {
+  color: #ffe600;
+}
+
+.section {
+  padding: 60px;
+  height: 700px;
   margin: 10px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#habilidades ul {
-  list-style-type: disc;
-  margin-left: 20px;
 }
 
 .proyectos {
@@ -57,6 +59,31 @@ section {
 footer {
   text-align: center;
   padding: 10px;
-  background: #333;
+  background: #5b3cc4;
   color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background: #5b3cc4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #4a2a94;
 }
