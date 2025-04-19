@@ -103,3 +103,14 @@ document.addEventListener("scroll", () => {
     }
   });
 });
+
+Array.from(document.styleSheets).forEach(sheet => {
+  try {
+    const rules = sheet.cssRules;
+    // Tu lógica aquí
+  } catch (e) {
+    if (e.name === 'SecurityError') {
+      console.warn('No se puede acceder a una hoja de estilo por política de CORS:', sheet.href);
+    }
+  }
+});
