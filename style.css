@@ -17,6 +17,12 @@ body,html {
   overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
+.animation {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
 .navbar {
   background-color: transparent;
   position: fixed;
@@ -158,7 +164,7 @@ body,html {
 
 .about-me {
   background-color: #eb51a1;
-  padding: 50px;
+  padding: 20px;
   color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -439,10 +445,18 @@ ul.team{
 }
 
 .each{
-  margin-left: 40px;
+  margin-bottom: 50px;
+  margin-left: 0px; /* default para móviles */
   weight: 100%;
   display: flex;
 }
+/* A partir de pantallas grandes (ej. 1024px en adelante), aplicamos margen */
+@media (min-width: 1024px) {
+  .each {
+    margin-left: 30px;
+  }
+}
+
 .project-title{
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -873,8 +887,9 @@ ul.team{
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 
-  .project-info {
-    text-align: center;
+  .each {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center;
   }
 
   .contact-info h2 {
