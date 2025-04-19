@@ -32,6 +32,24 @@ body,html {
   transition: background-color 0.3s ease;
   right: 1rem;
 }
+
+@media (max-width: 425px) {
+  .nav-links {
+    padding-top: 1px; /* Añadir algo de padding para que no se vean pegados al borde */
+    justify-content: center; /* Centrar la barra de navegación */
+    width: 100%;
+  }
+
+  .navbar .nav-buttons {
+    justify-content: center; /* Alinea los botones al centro */
+    width: 100%; /* Asegura que los botones estén centrados */
+  }
+
+  .navbar .nav-buttons a {
+    margin: 0 15px; /* Asegura que haya un buen espaciado entre los botones */
+  }
+}
+
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -101,11 +119,18 @@ body,html {
   box-sizing: border-box; /* Incluye padding y borde en el ancho total */
   padding: 0; /* Asegúrate de que no haya padding extra */
   margin: 0; /* Asegúrate de que no haya márgenes extra */
-  padding-left: 50px;
+  weight:100%
+}
+
+@media (min-width: 1000px) {
+  .hero-content {
+    max-width: 100%; /* En pantallas pequeñas, ocupa todo el ancho disponible */
+    padding-left: 50px; /* Padding izquierdo */
+  }
 }
 
 .margin-hero {
-  margin-bottom: 3.2rem;
+  margin-bottom: 3rem;
   font-size: 3rem; /* Tamaño de fuente reducido */
 }
 
@@ -976,7 +1001,9 @@ ul.team{
     flex-direction: column; /* Cambia a columna para evitar desbordamiento */
   }
 
-  .hero-content, .hero-image {
-    max-width: 100%; /* Asegúrate de que no excedan el ancho */
+  .hero-image {
+    width: 100%; /* Asegurarse de que los elementos ocupen todo el ancho disponible */
+    max-width: 100%;
+    height: auto;
   }
 }
